@@ -1,0 +1,835 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqojy23qda4sa"]
+
+[ext_resource type="Texture2D" uid="uid://cbc3gpp5xay1i" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk_knight_1.png" id="2_wijvj"]
+[ext_resource type="Texture2D" uid="uid://cyfb4mii2561k" path="res://Medieval_Castle_Asset_Pack/Tiles/damaged_brick_4.png" id="3_jpjfj"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+z_index = -2
+position = Vector2(390, 427)
+zoom = Vector2(1.5, 3.2)
+
+[node name="Button" type="Button" parent="."]
+offset_left = 15.0
+offset_top = 283.0
+offset_right = 85.0
+offset_bottom = 323.0
+theme_type_variation = &"FlatButton"
+text = "QUIT"
+
+[node name="Panel" type="Panel" parent="."]
+visible = false
+offset_left = -45.0
+offset_top = 3.0
+offset_right = 3.0
+offset_bottom = 648.0
+
+[node name="Panel3" type="Panel" parent="."]
+visible = false
+offset_left = 1.0
+offset_top = 650.0
+offset_right = 130.0
+offset_bottom = 1802.0
+rotation = -1.57348
+
+[node name="Panel4" type="Panel" parent="."]
+visible = false
+offset_left = 4.0
+offset_top = 359.0
+offset_right = 361.0
+offset_bottom = 1511.0
+rotation = -1.57348
+
+[node name="Panel2" type="Panel" parent="."]
+visible = false
+offset_left = 749.0
+offset_top = 1.0
+offset_right = 1151.0
+offset_bottom = 646.0
+
+[node name="DamagedBrick4" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(29, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick5" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(29, 375)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick6" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(29, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick7" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(29, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick8" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(29, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick9" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(29, 373.5)
+scale = Vector2(1, 1.09375)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick10" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(29, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick11" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(29, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick12" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(61, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick13" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(61, 373.5)
+scale = Vector2(1, 1.09375)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick14" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(61, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick15" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(61, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick16" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(93, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick17" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(93, 373.5)
+scale = Vector2(1, 1.09375)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick18" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(93, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick19" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(93, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick21" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(125, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick22" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(125, 373)
+scale = Vector2(1, 1.125)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick23" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(125, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick24" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(125, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick25" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(157, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick26" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(157, 375)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick27" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(157, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick28" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(157, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick29" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(157, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick30" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(157, 373.5)
+scale = Vector2(1, 1.09375)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick31" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(157, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick32" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(157, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick37" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(221, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick38" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(221, 375)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick39" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(221, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick40" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(221, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick41" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(221, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick42" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(221, 373.5)
+scale = Vector2(1, 1.09375)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick43" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(221, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick44" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(221, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick45" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(253, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick46" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(253, 373.5)
+scale = Vector2(1, 1.09375)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick47" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(253, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick48" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(253, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick49" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(285, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick50" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(285, 373)
+scale = Vector2(1, 1.125)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick51" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(285, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick52" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(285, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick53" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(317, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick54" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(317, 372.5)
+scale = Vector2(1, 1.15625)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick55" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(317, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick56" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(317, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick57" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(349, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick58" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(349, 375)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick59" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(349, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick60" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(349, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick61" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(349, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick62" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(349, 373)
+scale = Vector2(1, 1.125)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick63" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(349, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick64" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(349, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick33" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(189, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick110" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(381, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick111" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(381, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick112" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(413, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick113" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(445, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick114" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(477, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick115" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(509, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick116" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(509, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick117" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(573, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick118" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(573, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick119" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(605, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick120" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(637, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick121" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(669, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick122" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(701, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick123" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(701, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick124" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(541, 471)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick34" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(189, 373.5)
+scale = Vector2(1, 1.09375)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick35" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(189, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick36" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(189, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick65" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(381, 375)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick66" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(381, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick67" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(381, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick68" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(381, 373.5)
+scale = Vector2(1, 1.09375)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick69" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(381, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick70" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(381, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick71" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(413, 373.5)
+scale = Vector2(1, 1.09375)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick72" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(413, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick73" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(413, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick74" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(445, 373)
+scale = Vector2(1, 1.125)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick75" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(445, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick76" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(445, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick77" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(477, 373)
+scale = Vector2(1, 1.125)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick78" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(477, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick79" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(477, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick80" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(509, 375)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick81" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(509, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick82" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(509, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick83" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(509, 373)
+scale = Vector2(1, 1.125)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick84" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(509, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick85" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(509, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick86" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(573, 375)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick87" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(573, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick88" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(573, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick89" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(573, 373)
+scale = Vector2(1, 1.125)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick90" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(573, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick91" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(573, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick92" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(605, 373)
+scale = Vector2(1, 1.125)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick93" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(605, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick94" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(605, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick95" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(637, 373)
+scale = Vector2(1, 1.125)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick96" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(637, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick97" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(637, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick98" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(669, 373)
+scale = Vector2(1, 1.125)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick99" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(669, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick100" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(669, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick101" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(701, 375)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick102" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(701, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick103" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(701, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick104" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(701, 373)
+scale = Vector2(1, 1.125)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick105" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(701, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick106" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(701, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick125" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(738.62, 471)
+scale = Vector2(1.35125, 1)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick127" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(734, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick128" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(734, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick129" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(738, 407)
+scale = Vector2(1.375, 1)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick131" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(738, 373)
+scale = Vector2(1.34375, 1.125)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick130" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(738.5, 439)
+scale = Vector2(1.34375, 1)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick107" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(541, 373)
+scale = Vector2(1, 1.125)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick108" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(541, 407)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick109" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(541, 439)
+texture = ExtResource("3_jpjfj")
+metadata/_edit_group_ = true
+
+[node name="WalkKnight1" type="Sprite2D" parent="."]
+position = Vector2(212, 486)
+texture = ExtResource("2_wijvj")

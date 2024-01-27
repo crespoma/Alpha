@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=3 uid="uid://bcgakk5ry20lt"]
+
+[ext_resource type="Texture2D" uid="uid://dalxdqsh5ycqt" path="res://Medieval_Castle_Asset_Pack/Background/layer_1.png" id="1_0v7lo"]
+[ext_resource type="Script" path="res://Play.gd" id="1_ssuaj"]
+[ext_resource type="Texture2D" uid="uid://dqnviya00e8nh" path="res://Medieval_Castle_Asset_Pack/Background/layer_2.png" id="2_64h44"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_14pcy"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_8rokg"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 1.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="."]
+z_index = 1
+layout_mode = 0
+offset_left = 149.0
+offset_top = 269.0
+offset_right = 258.0
+offset_bottom = 328.0
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0.976471, 0.976471, 0.976471, 1)
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxTexture_14pcy")
+theme_override_styles/disabled = SubResource("StyleBoxLine_8rokg")
+text = "New Game"
+alignment = 0
+script = ExtResource("1_ssuaj")
+
+[node name="Layer1" type="Sprite2D" parent="."]
+position = Vector2(1152, 642.802)
+scale = Vector2(3.58438, 3.59889)
+texture = ExtResource("1_0v7lo")
+offset = Vector2(-160, -88)
+
+[node name="Layer2" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(578.5, 505.5)
+scale = Vector2(3.58438, 2.20611)
+texture = ExtResource("2_64h44")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(624, 336)
+zoom = Vector2(1.2, 1.2)
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
