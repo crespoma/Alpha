@@ -1,49 +1,27 @@
-[gd_scene load_steps=3 format=3 uid="uid://d113k4c5ylscn"]
+[gd_scene load_steps=10 format=3 uid="uid://d113k4c5ylscn"]
 
 [ext_resource type="Texture2D" uid="uid://cyfb4mii2561k" path="res://Medieval_Castle_Asset_Pack/Tiles/damaged_brick_4.png" id="1_h5oy2"]
-[ext_resource type="PackedScene" uid="uid://c0nmkrjew4o1r" path="res://World1/Player.tscn" id="2_w8y2p"]
+[ext_resource type="Script" path="res://Worlds/PlayerSelect/PlayerSelect.gd" id="1_xhoha"]
+[ext_resource type="PackedScene" uid="uid://cu6wro0kdflny" path="res://Characters/Wizard.tscn" id="3_mc22b"]
+[ext_resource type="PackedScene" uid="uid://hi7rnk3u1u05" path="res://Characters/Knight.tscn" id="4_c1yvu"]
+[ext_resource type="PackedScene" uid="uid://vhtvhfaqndmd" path="res://Characters/Archer.tscn" id="4_qxmid"]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="Theme" id="Theme_k1pcw"]
 
-[node name="Button" type="Button" parent="."]
-offset_left = 326.0
-offset_top = 394.0
-offset_right = 383.0
-offset_bottom = 425.0
-theme_type_variation = &"FlatButton"
-text = "QUIT"
+[sub_resource type="SystemFont" id="SystemFont_mr4q8"]
 
-[node name="Panel" type="Panel" parent="."]
-visible = false
-offset_left = -45.0
-offset_top = 3.0
-offset_right = 3.0
-offset_bottom = 648.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bo62q"]
+size = Vector2(1145.5, 156)
 
-[node name="Panel3" type="Panel" parent="."]
-visible = false
-offset_left = 1.0
-offset_top = 650.0
-offset_right = 130.0
-offset_bottom = 1802.0
-rotation = -1.57348
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_157mx"]
+size = Vector2(1143, 75.4376)
 
-[node name="Panel4" type="Panel" parent="."]
-visible = false
-offset_left = 4.0
-offset_top = 359.0
-offset_right = 361.0
-offset_bottom = 1511.0
-rotation = -1.57348
-
-[node name="Panel2" type="Panel" parent="."]
-visible = false
-offset_left = 749.0
-offset_top = 1.0
-offset_right = 1151.0
-offset_bottom = 646.0
+[node name="PlayerSelect_Screen" type="Node2D"]
+position = Vector2(-17, -194)
+script = ExtResource("1_xhoha")
 
 [node name="DamagedBrick4" type="Sprite2D" parent="."]
+visible = false
 z_index = -2
 position = Vector2(29, 471)
 texture = ExtResource("1_h5oy2")
@@ -68,27 +46,30 @@ texture = ExtResource("1_h5oy2")
 metadata/_edit_group_ = true
 
 [node name="DamagedBrick8" type="Sprite2D" parent="."]
-z_index = -2
-position = Vector2(29, 471)
+z_index = -3
+position = Vector2(19, 471)
+scale = Vector2(1.625, 1)
 texture = ExtResource("1_h5oy2")
 metadata/_edit_group_ = true
 
 [node name="DamagedBrick9" type="Sprite2D" parent="."]
 z_index = -2
-position = Vector2(29, 373.5)
-scale = Vector2(1, 1.09375)
+position = Vector2(19, 373.5)
+scale = Vector2(1.625, 1.09375)
 texture = ExtResource("1_h5oy2")
 metadata/_edit_group_ = true
 
 [node name="DamagedBrick10" type="Sprite2D" parent="."]
 z_index = -2
-position = Vector2(29, 407)
+position = Vector2(19, 407)
+scale = Vector2(1.625, 1)
 texture = ExtResource("1_h5oy2")
 metadata/_edit_group_ = true
 
 [node name="DamagedBrick11" type="Sprite2D" parent="."]
 z_index = -2
-position = Vector2(29, 439)
+position = Vector2(19, 439)
+scale = Vector2(1.625, 1)
 texture = ExtResource("1_h5oy2")
 metadata/_edit_group_ = true
 
@@ -794,8 +775,8 @@ metadata/_edit_group_ = true
 
 [node name="DamagedBrick131" type="Sprite2D" parent="."]
 z_index = -2
-position = Vector2(738, 373)
-scale = Vector2(1.34375, 1.125)
+position = Vector2(738.25, 373)
+scale = Vector2(1.35937, 1.125)
 texture = ExtResource("1_h5oy2")
 metadata/_edit_group_ = true
 
@@ -825,18 +806,98 @@ position = Vector2(541, 439)
 texture = ExtResource("1_h5oy2")
 metadata/_edit_group_ = true
 
-[node name="Knight" parent="." instance=ExtResource("2_w8y2p")]
-position = Vector2(-437, 180)
-scale = Vector2(1.01661, 0.862423)
-
 [node name="Choose Your Character" type="Label" parent="."]
-offset_left = 278.0
-offset_top = 367.0
-offset_right = 527.0
-offset_bottom = 390.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 297.0
+offset_top = 381.0
+offset_right = 533.0
+offset_bottom = 412.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme = SubResource("Theme_k1pcw")
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(0.466667, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.196078, 0.960784, 0.890196, 0.313726)
+theme_override_constants/shadow_offset_x = 3
+theme_override_fonts/font = SubResource("SystemFont_mr4q8")
+theme_override_font_sizes/font_size = 18
 text = "Choose Your Character"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Floor" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(573.75, 572)
+shape = SubResource("RectangleShape2D_bo62q")
+metadata/_edit_lock_ = true
+
+[node name="LeftWall" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-42, 529)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_157mx")
+metadata/_edit_lock_ = true
+
+[node name="RightWall" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(798, 476)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_157mx")
+metadata/_edit_lock_ = true
+
+[node name="Sky" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(572.5, 271)
+shape = SubResource("RectangleShape2D_bo62q")
+metadata/_edit_lock_ = true
+
+[node name="Floorskin_Placeholder" type="Panel" parent="."]
+offset_left = -4.0
+offset_top = 485.0
+offset_right = 781.0
+offset_bottom = 650.0
+metadata/_edit_lock_ = true
+
+[node name="Floorskin_Placeholder2" type="Panel" parent="."]
+offset_left = -3.99998
+offset_top = 108.0
+offset_right = 781.0
+offset_bottom = 276.0
+rotation = 1.57136
+metadata/_edit_lock_ = true
+
+[node name="Floorskin_Placeholder3" type="Panel" parent="."]
+offset_left = 925.0
+offset_top = 129.0
+offset_right = 1710.0
+offset_bottom = 294.0
+rotation = 1.57136
+metadata/_edit_lock_ = true
+
+[node name="SkySkin_Placeholder" type="Panel" parent="."]
+offset_left = -9.0
+offset_top = 194.0
+offset_right = 776.0
+offset_bottom = 359.0
+metadata/_edit_lock_ = true
+
+[node name="Wizard" parent="." instance=ExtResource("3_mc22b")]
+position = Vector2(67, 234)
+metadata/_edit_lock_ = true
+
+[node name="Archer" parent="." instance=ExtResource("4_qxmid")]
+position = Vector2(413, 473)
+metadata/_edit_lock_ = true
+
+[node name="Knight" parent="." instance=ExtResource("4_c1yvu")]
+position = Vector2(-416, 152)
+metadata/_edit_lock_ = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(377, 394)
-scale = Vector2(0.371412, 0.941952)
-zoom = Vector2(1.6, 2.5)
+position = Vector2(387, 440)
+scale = Vector2(1, 0.809588)
+zoom = Vector2(1.7, 1.7)
+metadata/_edit_lock_ = true

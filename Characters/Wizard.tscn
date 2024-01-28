@@ -1,0 +1,76 @@
+[gd_scene load_steps=10 format=3 uid="uid://cu6wro0kdflny"]
+
+[ext_resource type="Texture2D" uid="uid://dy8foyjonn7s1" path="res://Wizard Pack/Idle.png" id="1_41ovs"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ubtwy"]
+atlas = ExtResource("1_41ovs")
+region = Rect2(0, 0, 231, 190)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tlx1c"]
+atlas = ExtResource("1_41ovs")
+region = Rect2(231, 0, 231, 190)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jyypp"]
+atlas = ExtResource("1_41ovs")
+region = Rect2(462, 0, 231, 190)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tg2pv"]
+atlas = ExtResource("1_41ovs")
+region = Rect2(693, 0, 231, 190)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7nu3w"]
+atlas = ExtResource("1_41ovs")
+region = Rect2(924, 0, 231, 190)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_37nj0"]
+atlas = ExtResource("1_41ovs")
+region = Rect2(1155, 0, 231, 190)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0hgw3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ubtwy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tlx1c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jyypp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tg2pv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7nu3w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_37nj0")
+}],
+"loop": true,
+"name": &"Wizard_Idle",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_eqvuv"]
+radius = 1.9097
+height = 11.0465
+
+[node name="Wizard" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(616, 242)
+scale = Vector2(0.42, 0.42)
+sprite_frames = SubResource("SpriteFrames_0hgw3")
+animation = &"Wizard_Idle"
+frame_progress = 0.481821
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(612, 242)
+scale = Vector2(2.09455, 3.44)
+shape = SubResource("CapsuleShape2D_eqvuv")

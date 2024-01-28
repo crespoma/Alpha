@@ -12,4 +12,4 @@ func _process(delta):
 
 
 func _on_pressed():
-	get_tree().change_scene_to_file("res://World1/PlayerSelect.tscn");
+	get_tree().change_scene_to_file("res://Worlds/PlayerSelect/PlayerSelect.tscn");

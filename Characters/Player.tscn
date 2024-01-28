@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://c0nmkrjew4o1r"]
+[gd_scene load_steps=21 format=3 uid="uid://dt877sll6ufr"]
 
 [ext_resource type="Texture2D" uid="uid://44vivavlyfmt" path="res://Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_1.png" id="1_uytpo"]
 [ext_resource type="Texture2D" uid="uid://cccbpr8m0awij" path="res://Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_2.png" id="2_hk4ny"]
@@ -86,11 +86,21 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Knight" type="Node2D"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v3m7b"]
+radius = 11.435
+height = 40.3893
+
+[node name="Knight" type="CharacterBody2D"]
+position = Vector2(10, 7)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(527, 323)
+position = Vector2(528, 323)
 scale = Vector2(0.83999, 1)
 sprite_frames = SubResource("SpriteFrames_pemy8")
 animation = &"Knight_Idle"
-frame_progress = 0.384299
+frame_progress = 0.640904
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(525, 334)
+scale = Vector2(0.96, 1.08)
+shape = SubResource("CapsuleShape2D_v3m7b")
