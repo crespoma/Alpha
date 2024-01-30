@@ -1,44 +1,44 @@
-[gd_scene load_steps=21 format=3 uid="uid://hi7rnk3u1u05"]
+[gd_scene load_steps=21 format=3 uid="uid://dt877sll6ufr"]
 
-[ext_resource type="Texture2D" uid="uid://44vivavlyfmt" path="res://Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_1.png" id="1_mcbrv"]
-[ext_resource type="Texture2D" uid="uid://cccbpr8m0awij" path="res://Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_2.png" id="2_2f3w6"]
-[ext_resource type="Texture2D" uid="uid://bacmuddrvo6qf" path="res://Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_3.png" id="3_yx31k"]
-[ext_resource type="Texture2D" uid="uid://bavglnu3xc8hk" path="res://Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_4.png" id="4_kovlb"]
-[ext_resource type="Texture2D" uid="uid://jnj4fht3wniy" path="res://Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_5.png" id="5_xw0py"]
-[ext_resource type="Texture2D" uid="uid://4uhmmgsewb4t" path="res://Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_6.png" id="6_wavnb"]
-[ext_resource type="Texture2D" uid="uid://cbc3gpp5xay1i" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk_knight_1.png" id="7_ymrrp"]
-[ext_resource type="Texture2D" uid="uid://tncewtosg2fs" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_2.png" id="8_w1225"]
-[ext_resource type="Texture2D" uid="uid://cql4jgn73hgxa" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_8.png" id="9_phvgk"]
-[ext_resource type="Texture2D" uid="uid://dgg6kf1acmf0m" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_9.png" id="10_vlrh5"]
-[ext_resource type="Texture2D" uid="uid://b3hjraa4eky1e" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_3.png" id="11_vqrck"]
-[ext_resource type="Texture2D" uid="uid://dgwwueb0n5gis" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_5.png" id="12_vdr3p"]
-[ext_resource type="Texture2D" uid="uid://dt1vknkdhts3n" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_4.png" id="13_0mae2"]
-[ext_resource type="Texture2D" uid="uid://dd47yl5wmu58w" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_11.png" id="14_dve7d"]
-[ext_resource type="Texture2D" uid="uid://b3kwqirid76qn" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_6.png" id="15_a8000"]
-[ext_resource type="Texture2D" uid="uid://diqd4dlc8x0ef" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_7.png" id="16_vilkw"]
-[ext_resource type="Texture2D" uid="uid://dkw5amv7olpnt" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_10.png" id="17_lllf0"]
-[ext_resource type="Texture2D" uid="uid://4dp7ldks0fu8" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_12.png" id="18_5fb82"]
+[ext_resource type="Texture2D" uid="uid://44vivavlyfmt" path="res://Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_1.png" id="1_uytpo"]
+[ext_resource type="Texture2D" uid="uid://cccbpr8m0awij" path="res://Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_2.png" id="2_hk4ny"]
+[ext_resource type="Texture2D" uid="uid://bacmuddrvo6qf" path="res://Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_3.png" id="3_12tkg"]
+[ext_resource type="Texture2D" uid="uid://bavglnu3xc8hk" path="res://Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_4.png" id="4_oy38l"]
+[ext_resource type="Texture2D" uid="uid://jnj4fht3wniy" path="res://Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_5.png" id="5_o22g5"]
+[ext_resource type="Texture2D" uid="uid://4uhmmgsewb4t" path="res://Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_6.png" id="6_yjyot"]
+[ext_resource type="Texture2D" uid="uid://cbc3gpp5xay1i" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk_knight_1.png" id="7_kbt75"]
+[ext_resource type="Texture2D" uid="uid://tncewtosg2fs" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_2.png" id="8_3xsyx"]
+[ext_resource type="Texture2D" uid="uid://cql4jgn73hgxa" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_8.png" id="9_jgvow"]
+[ext_resource type="Texture2D" uid="uid://dgg6kf1acmf0m" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_9.png" id="10_os652"]
+[ext_resource type="Texture2D" uid="uid://b3hjraa4eky1e" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_3.png" id="11_eplsl"]
+[ext_resource type="Texture2D" uid="uid://dgwwueb0n5gis" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_5.png" id="12_yhgtv"]
+[ext_resource type="Texture2D" uid="uid://dt1vknkdhts3n" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_4.png" id="13_vvu1k"]
+[ext_resource type="Texture2D" uid="uid://dd47yl5wmu58w" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_11.png" id="14_dpuwj"]
+[ext_resource type="Texture2D" uid="uid://b3kwqirid76qn" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_6.png" id="15_3ywv7"]
+[ext_resource type="Texture2D" uid="uid://diqd4dlc8x0ef" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_7.png" id="16_7a72n"]
+[ext_resource type="Texture2D" uid="uid://dkw5amv7olpnt" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_10.png" id="17_2guod"]
+[ext_resource type="Texture2D" uid="uid://4dp7ldks0fu8" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_12.png" id="18_2gmls"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pemy8"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_mcbrv")
+"texture": ExtResource("1_uytpo")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_2f3w6")
+"texture": ExtResource("2_hk4ny")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_yx31k")
+"texture": ExtResource("3_12tkg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_kovlb")
+"texture": ExtResource("4_oy38l")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_xw0py")
+"texture": ExtResource("5_o22g5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_wavnb")
+"texture": ExtResource("6_yjyot")
 }],
 "loop": true,
 "name": &"Knight_Idle",
@@ -46,40 +46,40 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("7_ymrrp")
+"texture": ExtResource("7_kbt75")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_w1225")
+"texture": ExtResource("8_3xsyx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_phvgk")
+"texture": ExtResource("9_jgvow")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_vlrh5")
+"texture": ExtResource("10_os652")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_vqrck")
+"texture": ExtResource("11_eplsl")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_vdr3p")
+"texture": ExtResource("12_yhgtv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_0mae2")
+"texture": ExtResource("13_vvu1k")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_dve7d")
+"texture": ExtResource("14_dpuwj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_a8000")
+"texture": ExtResource("15_3ywv7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("16_vilkw")
+"texture": ExtResource("16_7a72n")
 }, {
 "duration": 1.0,
-"texture": ExtResource("17_lllf0")
+"texture": ExtResource("17_2guod")
 }, {
 "duration": 1.0,
-"texture": ExtResource("18_5fb82")
+"texture": ExtResource("18_2gmls")
 }],
 "loop": true,
 "name": &"Knight_walk",
@@ -90,18 +90,19 @@ animations = [{
 radius = 11.435
 height = 40.3893
 
-[node name="Knight" type="CharacterBody2D"]
+[node name="Knight" type="Node2D"]
 position = Vector2(10, 7)
-scale = Vector2(1.00219, 0.996588)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(518, 321)
-scale = Vector2(0.75, 0.75)
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+position = Vector2(528, 323)
+scale = Vector2(0.83999, 1)
 sprite_frames = SubResource("SpriteFrames_pemy8")
 animation = &"Knight_Idle"
-frame_progress = 0.785579
+frame_progress = 0.640904
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(516.87, 326.113)
-scale = Vector2(0.599476, 1)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(525, 334)
+scale = Vector2(0.96, 1.08)
 shape = SubResource("CapsuleShape2D_v3m7b")

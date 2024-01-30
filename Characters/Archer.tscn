@@ -2,6 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://2sqtp7easyyk" path="res://Base/Spritesheet/Ranger- Base.png" id="1_jowcw"]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qitlv"]
+radius = 8.0
+height = 36.0
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_eyn6v"]
 atlas = ExtResource("1_jowcw")
 region = Rect2(0, 0, 48, 48)
@@ -57,19 +61,17 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qitlv"]
-radius = 8.0
-height = 36.0
-
-[node name="Archer" type="CharacterBody2D"]
+[node name="Archer" type="Node2D"]
 position = Vector2(314, 211)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(-4, 9)
+shape = SubResource("CapsuleShape2D_qitlv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 position = Vector2(0, -1)
 sprite_frames = SubResource("SpriteFrames_7tnk4")
 animation = &"Archer_Idle"
 frame_progress = 0.79384
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-4, 9)
-shape = SubResource("CapsuleShape2D_qitlv")

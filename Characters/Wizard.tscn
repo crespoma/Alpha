@@ -2,6 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://dy8foyjonn7s1" path="res://Wizard Pack/Idle.png" id="1_41ovs"]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_eqvuv"]
+radius = 1.9097
+height = 11.0465
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_ubtwy"]
 atlas = ExtResource("1_41ovs")
 region = Rect2(0, 0, 231, 190)
@@ -57,20 +61,18 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_eqvuv"]
-radius = 1.9097
-height = 11.0465
+[node name="Wizard" type="Node2D"]
 
-[node name="Wizard" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(612, 242)
+scale = Vector2(2.09455, 3.44)
+shape = SubResource("CapsuleShape2D_eqvuv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 position = Vector2(616, 242)
 scale = Vector2(0.42, 0.42)
 sprite_frames = SubResource("SpriteFrames_0hgw3")
 animation = &"Wizard_Idle"
 frame_progress = 0.481821
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(612, 242)
-scale = Vector2(2.09455, 3.44)
-shape = SubResource("CapsuleShape2D_eqvuv")

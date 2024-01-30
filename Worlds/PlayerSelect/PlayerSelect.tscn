@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://d113k4c5ylscn"]
+[gd_scene load_steps=12 format=3 uid="uid://d113k4c5ylscn"]
 
 [ext_resource type="Texture2D" uid="uid://cyfb4mii2561k" path="res://Medieval_Castle_Asset_Pack/Tiles/damaged_brick_4.png" id="1_h5oy2"]
 [ext_resource type="Script" path="res://Worlds/PlayerSelect/PlayerSelect.gd" id="1_xhoha"]
 [ext_resource type="PackedScene" uid="uid://cu6wro0kdflny" path="res://Characters/Wizard.tscn" id="3_mc22b"]
-[ext_resource type="PackedScene" uid="uid://hi7rnk3u1u05" path="res://Characters/Knight.tscn" id="4_c1yvu"]
+[ext_resource type="PackedScene" uid="uid://dt877sll6ufr" path="res://Characters/Knight.tscn" id="4_c1yvu"]
 [ext_resource type="PackedScene" uid="uid://vhtvhfaqndmd" path="res://Characters/Archer.tscn" id="4_qxmid"]
+[ext_resource type="StyleBox" uid="uid://cacpype2syp0o" path="res://Highlighter.tres" id="6_qa0me"]
 
 [sub_resource type="Theme" id="Theme_k1pcw"]
 
@@ -15,6 +16,8 @@ size = Vector2(1145.5, 156)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_157mx"]
 size = Vector2(1143, 75.4376)
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_we4vi"]
 
 [node name="PlayerSelect_Screen" type="Node2D"]
 position = Vector2(-17, -194)
@@ -901,3 +904,37 @@ position = Vector2(387, 440)
 scale = Vector2(1, 0.809588)
 zoom = Vector2(1.7, 1.7)
 metadata/_edit_lock_ = true
+
+[node name="KnightStart" type="Button" parent="."]
+z_as_relative = false
+offset_left = 81.0
+offset_top = 450.0
+offset_right = 129.0
+offset_bottom = 504.0
+theme_type_variation = &"FlatButton"
+theme_override_styles/hover = ExtResource("6_qa0me")
+action_mode = 0
+button_group = SubResource("ButtonGroup_we4vi")
+
+[node name="ArcherStart" type="Button" parent="."]
+offset_left = 377.0
+offset_top = 450.0
+offset_right = 441.0
+offset_bottom = 506.0
+theme_type_variation = &"FlatButton"
+theme_override_styles/hover = ExtResource("6_qa0me")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_we4vi")
+
+[node name="WizardStart" type="Button" parent="."]
+offset_left = 657.0
+offset_top = 450.0
+offset_right = 705.0
+offset_bottom = 506.0
+theme_type_variation = &"FlatButton"
+theme_override_styles/hover = ExtResource("6_qa0me")
+button_group = SubResource("ButtonGroup_we4vi")
+
+[connection signal="pressed" from="KnightStart" to="." method="_on_knight_start_pressed"]
+[connection signal="pressed" from="ArcherStart" to="." method="_on_ranger_start_pressed"]
+[connection signal="pressed" from="WizardStart" to="." method="_on_wizard_start_pressed"]
