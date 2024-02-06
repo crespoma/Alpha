@@ -899,10 +899,10 @@ metadata/_edit_lock_ = true
 position = Vector2(-416, 152)
 metadata/_edit_lock_ = true
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="PlayerSelectCamera" type="Camera2D" parent="."]
 position = Vector2(387, 440)
 scale = Vector2(1, 0.809588)
-zoom = Vector2(1.7, 1.7)
+zoom = Vector2(1.6, 1.6)
 metadata/_edit_lock_ = true
 
 [node name="KnightStart" type="Button" parent="."]

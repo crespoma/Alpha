@@ -40,7 +40,7 @@ offset_bottom = 182.0
 rotation = 1.57136
 
 [node name="Knight" parent="." instance=ExtResource("2_os1k5")]
-position = Vector2(-439, -285)
+position = Vector2(-448, -240)
 script = ExtResource("3_fgun6")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
