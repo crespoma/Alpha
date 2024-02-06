@@ -1,0 +1,70 @@
+[gd_scene load_steps=6 format=3 uid="uid://bqojy23qda4sa"]
+
+[ext_resource type="Script" path="res://Worlds/World1/Knight/World1.gd" id="1_oasvl"]
+[ext_resource type="PackedScene" uid="uid://dt877sll6ufr" path="res://Characters/Knight.tscn" id="2_os1k5"]
+[ext_resource type="Script" path="res://Characters/Knight.gd" id="3_fgun6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jiks4"]
+size = Vector2(849.451, 11.4144)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q06jq"]
+size = Vector2(88.9677, 246.732)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_oasvl")
+
+[node name="Floorskin_Placeholder" type="Panel" parent="."]
+offset_left = 3.0
+offset_top = 432.0
+offset_right = 1154.0
+offset_bottom = 696.0
+
+[node name="Floorskin_Placeholder4" type="Panel" parent="."]
+offset_left = -4.0
+offset_top = -150.0
+offset_right = 1166.0
+offset_bottom = 56.0
+
+[node name="Floorskin_Placeholder2" type="Panel" parent="."]
+offset_left = 26.0
+offset_top = -44.0
+offset_right = 811.0
+offset_bottom = 142.0
+rotation = 1.57136
+
+[node name="Floorskin_Placeholder3" type="Panel" parent="."]
+offset_left = 1321.0
+offset_top = -25.0
+offset_right = 2106.0
+offset_bottom = 182.0
+rotation = 1.57136
+
+[node name="Knight" parent="." instance=ExtResource("2_os1k5")]
+position = Vector2(-439, -285)
+script = ExtResource("3_fgun6")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(20, 494)
+scale = Vector2(13.08, 1)
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(93.2722, -142)
+rotation = -1.5708
+scale = Vector2(0.9444, -1.11714)
+shape = SubResource("RectangleShape2D_jiks4")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-7.64527, -158)
+rotation = -1.5708
+scale = Vector2(0.9444, -1.11714)
+shape = SubResource("RectangleShape2D_jiks4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+z_as_relative = false
+position = Vector2(43.1079, 74)
+shape = SubResource("RectangleShape2D_q06jq")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(42.737, -572)
+scale = Vector2(1.11714, -0.9444)
+shape = SubResource("RectangleShape2D_q06jq")
