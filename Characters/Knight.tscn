@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://dt877sll6ufr"]
+[gd_scene load_steps=25 format=3 uid="uid://dt877sll6ufr"]
 
 [ext_resource type="Texture2D" uid="uid://44vivavlyfmt" path="res://Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_1.png" id="1_uytpo"]
 [ext_resource type="Texture2D" uid="uid://cccbpr8m0awij" path="res://Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_2.png" id="2_hk4ny"]
@@ -18,7 +18,10 @@
 [ext_resource type="Texture2D" uid="uid://diqd4dlc8x0ef" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_7.png" id="16_7a72n"]
 [ext_resource type="Texture2D" uid="uid://dkw5amv7olpnt" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_10.png" id="17_2guod"]
 [ext_resource type="Texture2D" uid="uid://4dp7ldks0fu8" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_12.png" id="18_2gmls"]
-[ext_resource type="Script" path="res://Characters/showCam.gd" id="19_1x56f"]
+[ext_resource type="Texture2D" uid="uid://xbnd01vuph3h" path="res://Medieval_Castle_Asset_Pack/HUD/bar_background.png" id="19_r3qfo"]
+[ext_resource type="Texture2D" uid="uid://bj2fqgty2tb11" path="res://Medieval_Castle_Asset_Pack/HUD/health_bar.png" id="20_ehtip"]
+[ext_resource type="Texture2D" uid="uid://dtgmq8mfyui7n" path="res://Medieval_Castle_Asset_Pack/HUD/weapon_icon.png" id="21_ct6kc"]
+[ext_resource type="Texture2D" uid="uid://do0uhyt80m6vn" path="res://Medieval_Castle_Asset_Pack/HUD/bar.png" id="22_q786l"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v3m7b"]
 radius = 11.435
@@ -107,4 +110,28 @@ animation = &"Knight_walk"
 
 [node name="KnightCam" type="Camera2D" parent="AnimatedSprite2D"]
 zoom = Vector2(2, 2)
-script = ExtResource("19_1x56f")
+limit_left = 0
+limit_top = 0
+limit_right = 1152
+limit_bottom = 375
+limit_smoothed = true
+
+[node name="BarBackground" type="Sprite2D" parent="."]
+position = Vector2(458, 252.5)
+texture = ExtResource("19_r3qfo")
+metadata/_edit_group_ = true
+
+[node name="HealthBar" type="Sprite2D" parent="."]
+position = Vector2(458, 252.5)
+texture = ExtResource("20_ehtip")
+metadata/_edit_group_ = true
+
+[node name="WeaponIcon" type="Sprite2D" parent="."]
+position = Vector2(386, 252.5)
+texture = ExtResource("21_ct6kc")
+metadata/_edit_group_ = true
+
+[node name="Bar" type="Sprite2D" parent="."]
+position = Vector2(458, 252.5)
+texture = ExtResource("22_q786l")
+metadata/_edit_group_ = true

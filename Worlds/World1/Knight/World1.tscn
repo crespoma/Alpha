@@ -1,23 +1,27 @@
-[gd_scene load_steps=6 format=3 uid="uid://bqojy23qda4sa"]
+[gd_scene load_steps=11 format=3 uid="uid://bqojy23qda4sa"]
 
 [ext_resource type="Script" path="res://Worlds/World1/Knight/World1.gd" id="1_oasvl"]
 [ext_resource type="PackedScene" uid="uid://dt877sll6ufr" path="res://Characters/Knight.tscn" id="2_os1k5"]
 [ext_resource type="Script" path="res://Characters/Knight.gd" id="3_fgun6"]
+[ext_resource type="Texture2D" uid="uid://c1vmspod0k2d1" path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0011_0.png" id="4_myvkf"]
+[ext_resource type="Texture2D" uid="uid://yj4wvwhrweq" path="res://Free Pixel Art Forest/Preview/Background.png" id="5_frlg5"]
+[ext_resource type="Texture2D" uid="uid://bq55y6yqltp4i" path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0002_7.png" id="6_au4l0"]
+[ext_resource type="Texture2D" uid="uid://c40bo2t7qvm6c" path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0003_6.png" id="7_lnro4"]
+[ext_resource type="Texture2D" uid="uid://barmh4wrl134y" path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0004_Lights.png" id="8_8yrrn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jiks4"]
-size = Vector2(849.451, 11.4144)
+size = Vector2(849.451, 15.0145)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q06jq"]
-size = Vector2(88.9677, 246.732)
+size = Vector2(106.957, 468.5)
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_oasvl")
 
 [node name="Floorskin_Placeholder" type="Panel" parent="."]
-offset_left = 3.0
-offset_top = 432.0
-offset_right = 1154.0
-offset_bottom = 696.0
+offset_top = 424.0
+offset_right = 1151.0
+offset_bottom = 744.0
 
 [node name="Floorskin_Placeholder4" type="Panel" parent="."]
 offset_left = -4.0
@@ -40,7 +44,8 @@ offset_bottom = 182.0
 rotation = 1.57136
 
 [node name="Knight" parent="." instance=ExtResource("2_os1k5")]
-position = Vector2(-448, -240)
+z_index = 1
+position = Vector2(-360, -16)
 script = ExtResource("3_fgun6")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
@@ -48,7 +53,7 @@ position = Vector2(20, 494)
 scale = Vector2(13.08, 1)
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(93.2722, -142)
+position = Vector2(90.8257, -142)
 rotation = -1.5708
 scale = Vector2(0.9444, -1.11714)
 shape = SubResource("RectangleShape2D_jiks4")
@@ -59,12 +64,35 @@ rotation = -1.5708
 scale = Vector2(0.9444, -1.11714)
 shape = SubResource("RectangleShape2D_jiks4")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="Floor" type="CollisionShape2D" parent="StaticBody2D"]
 z_as_relative = false
-position = Vector2(43.1079, 74)
+position = Vector2(44.9541, 84.25)
 shape = SubResource("RectangleShape2D_q06jq")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(42.737, -572)
+position = Vector2(42.737, -564.348)
 scale = Vector2(1.11714, -0.9444)
 shape = SubResource("RectangleShape2D_q06jq")
+
+[node name="Layer00110" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(704, 208)
+scale = Vector2(3.38793, 1.94704)
+texture = ExtResource("4_myvkf")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(640, 64)
+scale = Vector2(1.49569, 0.799496)
+texture = ExtResource("5_frlg5")
+
+[node name="Layer00027" type="Sprite2D" parent="."]
+position = Vector2(-1264, 624)
+texture = ExtResource("6_au4l0")
+
+[node name="Layer00036" type="Sprite2D" parent="."]
+position = Vector2(-872, -48)
+texture = ExtResource("7_lnro4")
+
+[node name="Layer0004Lights" type="Sprite2D" parent="."]
+position = Vector2(-440, 616)
+texture = ExtResource("8_8yrrn")
