@@ -1,27 +1,27 @@
 [gd_scene load_steps=25 format=3 uid="uid://dt877sll6ufr"]
 
-[ext_resource type="Texture2D" uid="uid://44vivavlyfmt" path="res://Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_1.png" id="1_uytpo"]
-[ext_resource type="Texture2D" uid="uid://cccbpr8m0awij" path="res://Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_2.png" id="2_hk4ny"]
-[ext_resource type="Texture2D" uid="uid://bacmuddrvo6qf" path="res://Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_3.png" id="3_12tkg"]
-[ext_resource type="Texture2D" uid="uid://bavglnu3xc8hk" path="res://Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_4.png" id="4_oy38l"]
-[ext_resource type="Texture2D" uid="uid://jnj4fht3wniy" path="res://Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_5.png" id="5_o22g5"]
-[ext_resource type="Texture2D" uid="uid://4uhmmgsewb4t" path="res://Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_6.png" id="6_yjyot"]
-[ext_resource type="Texture2D" uid="uid://cbc3gpp5xay1i" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk_knight_1.png" id="7_kbt75"]
-[ext_resource type="Texture2D" uid="uid://tncewtosg2fs" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_2.png" id="8_3xsyx"]
-[ext_resource type="Texture2D" uid="uid://cql4jgn73hgxa" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_8.png" id="9_jgvow"]
-[ext_resource type="Texture2D" uid="uid://dgg6kf1acmf0m" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_9.png" id="10_os652"]
-[ext_resource type="Texture2D" uid="uid://b3hjraa4eky1e" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_3.png" id="11_eplsl"]
-[ext_resource type="Texture2D" uid="uid://dgwwueb0n5gis" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_5.png" id="12_yhgtv"]
-[ext_resource type="Texture2D" uid="uid://dt1vknkdhts3n" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_4.png" id="13_vvu1k"]
-[ext_resource type="Texture2D" uid="uid://dd47yl5wmu58w" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_11.png" id="14_dpuwj"]
-[ext_resource type="Texture2D" uid="uid://b3kwqirid76qn" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_6.png" id="15_3ywv7"]
-[ext_resource type="Texture2D" uid="uid://diqd4dlc8x0ef" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_7.png" id="16_7a72n"]
-[ext_resource type="Texture2D" uid="uid://dkw5amv7olpnt" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_10.png" id="17_2guod"]
-[ext_resource type="Texture2D" uid="uid://4dp7ldks0fu8" path="res://Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_12.png" id="18_2gmls"]
-[ext_resource type="Texture2D" uid="uid://xbnd01vuph3h" path="res://Medieval_Castle_Asset_Pack/HUD/bar_background.png" id="19_r3qfo"]
-[ext_resource type="Texture2D" uid="uid://bj2fqgty2tb11" path="res://Medieval_Castle_Asset_Pack/HUD/health_bar.png" id="20_ehtip"]
-[ext_resource type="Texture2D" uid="uid://dtgmq8mfyui7n" path="res://Medieval_Castle_Asset_Pack/HUD/weapon_icon.png" id="21_ct6kc"]
-[ext_resource type="Texture2D" uid="uid://do0uhyt80m6vn" path="res://Medieval_Castle_Asset_Pack/HUD/bar.png" id="22_q786l"]
+[ext_resource type="Texture2D" uid="uid://44vivavlyfmt" path="res://assets/Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_1.png" id="1_imsqy"]
+[ext_resource type="Texture2D" uid="uid://cccbpr8m0awij" path="res://assets/Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_2.png" id="2_j8bnp"]
+[ext_resource type="Texture2D" uid="uid://bacmuddrvo6qf" path="res://assets/Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_3.png" id="3_iujom"]
+[ext_resource type="Texture2D" uid="uid://bavglnu3xc8hk" path="res://assets/Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_4.png" id="4_1b3cq"]
+[ext_resource type="Texture2D" uid="uid://jnj4fht3wniy" path="res://assets/Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_5.png" id="5_dlg07"]
+[ext_resource type="Texture2D" uid="uid://4uhmmgsewb4t" path="res://assets/Medieval_Castle_Asset_Pack/Characters/knight/idle/idle_knight_6.png" id="6_rl02u"]
+[ext_resource type="Texture2D" uid="uid://cbc3gpp5xay1i" path="res://assets/Medieval_Castle_Asset_Pack/Characters/knight/walk_knight_1.png" id="7_8ftuv"]
+[ext_resource type="Texture2D" uid="uid://tncewtosg2fs" path="res://assets/Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_2.png" id="8_8pwa0"]
+[ext_resource type="Texture2D" uid="uid://cql4jgn73hgxa" path="res://assets/Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_8.png" id="9_o53i5"]
+[ext_resource type="Texture2D" uid="uid://dgg6kf1acmf0m" path="res://assets/Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_9.png" id="10_q8en6"]
+[ext_resource type="Texture2D" uid="uid://b3hjraa4eky1e" path="res://assets/Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_3.png" id="11_v13o1"]
+[ext_resource type="Texture2D" uid="uid://dgwwueb0n5gis" path="res://assets/Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_5.png" id="12_hiex6"]
+[ext_resource type="Texture2D" uid="uid://dt1vknkdhts3n" path="res://assets/Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_4.png" id="13_nmo0t"]
+[ext_resource type="Texture2D" uid="uid://dd47yl5wmu58w" path="res://assets/Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_11.png" id="14_mkm3o"]
+[ext_resource type="Texture2D" uid="uid://b3kwqirid76qn" path="res://assets/Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_6.png" id="15_xhl54"]
+[ext_resource type="Texture2D" uid="uid://diqd4dlc8x0ef" path="res://assets/Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_7.png" id="16_qkvk5"]
+[ext_resource type="Texture2D" uid="uid://dkw5amv7olpnt" path="res://assets/Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_10.png" id="17_2sade"]
+[ext_resource type="Texture2D" uid="uid://4dp7ldks0fu8" path="res://assets/Medieval_Castle_Asset_Pack/Characters/knight/walk/walk_knight_12.png" id="18_hj51e"]
+[ext_resource type="Texture2D" uid="uid://xbnd01vuph3h" path="res://assets/Medieval_Castle_Asset_Pack/HUD/bar_background.png" id="19_0sina"]
+[ext_resource type="Texture2D" uid="uid://bj2fqgty2tb11" path="res://assets/Medieval_Castle_Asset_Pack/HUD/health_bar.png" id="20_kmv0c"]
+[ext_resource type="Texture2D" uid="uid://dtgmq8mfyui7n" path="res://assets/Medieval_Castle_Asset_Pack/HUD/weapon_icon.png" id="21_mnr7y"]
+[ext_resource type="Texture2D" uid="uid://do0uhyt80m6vn" path="res://assets/Medieval_Castle_Asset_Pack/HUD/bar.png" id="22_uekln"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v3m7b"]
 radius = 11.435
@@ -31,22 +31,22 @@ height = 40.3893
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_uytpo")
+"texture": ExtResource("1_imsqy")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_hk4ny")
+"texture": ExtResource("2_j8bnp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_12tkg")
+"texture": ExtResource("3_iujom")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_oy38l")
+"texture": ExtResource("4_1b3cq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_o22g5")
+"texture": ExtResource("5_dlg07")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_yjyot")
+"texture": ExtResource("6_rl02u")
 }],
 "loop": true,
 "name": &"Knight_Idle",
@@ -54,40 +54,40 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("7_kbt75")
+"texture": ExtResource("7_8ftuv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_3xsyx")
+"texture": ExtResource("8_8pwa0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_jgvow")
+"texture": ExtResource("9_o53i5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_os652")
+"texture": ExtResource("10_q8en6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_eplsl")
+"texture": ExtResource("11_v13o1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_yhgtv")
+"texture": ExtResource("12_hiex6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_vvu1k")
+"texture": ExtResource("13_nmo0t")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_dpuwj")
+"texture": ExtResource("14_mkm3o")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_3ywv7")
+"texture": ExtResource("15_xhl54")
 }, {
 "duration": 1.0,
-"texture": ExtResource("16_7a72n")
+"texture": ExtResource("16_qkvk5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("17_2guod")
+"texture": ExtResource("17_2sade")
 }, {
 "duration": 1.0,
-"texture": ExtResource("18_2gmls")
+"texture": ExtResource("18_hj51e")
 }],
 "loop": true,
 "name": &"Knight_walk",
@@ -117,21 +117,25 @@ limit_bottom = 375
 limit_smoothed = true
 
 [node name="BarBackground" type="Sprite2D" parent="."]
-position = Vector2(458, 252.5)
-texture = ExtResource("19_r3qfo")
+position = Vector2(526, 297)
+scale = Vector2(0.66, 1)
+texture = ExtResource("19_0sina")
 metadata/_edit_group_ = true
 
 [node name="HealthBar" type="Sprite2D" parent="."]
-position = Vector2(458, 252.5)
-texture = ExtResource("20_ehtip")
+position = Vector2(526, 297)
+scale = Vector2(0.73, 1)
+texture = ExtResource("20_kmv0c")
 metadata/_edit_group_ = true
 
 [node name="WeaponIcon" type="Sprite2D" parent="."]
-position = Vector2(386, 252.5)
-texture = ExtResource("21_ct6kc")
+position = Vector2(486, 289)
+scale = Vector2(0.785714, 0.645455)
+texture = ExtResource("21_mnr7y")
 metadata/_edit_group_ = true
 
 [node name="Bar" type="Sprite2D" parent="."]
-position = Vector2(458, 252.5)
-texture = ExtResource("22_q786l")
+position = Vector2(526, 297)
+scale = Vector2(0.737288, 1)
+texture = ExtResource("22_uekln")
 metadata/_edit_group_ = true

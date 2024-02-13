@@ -4,7 +4,9 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	
+	get_node("Knight/BarBackground").set("visible", false)
+	get_node("Knight/Bar").set("visible", false)
+	get_node("Knight/HealthBar").set("visible", false)
 	get_node("Knight/AnimatedSprite2D/KnightCam").set("enabled",false)
 	get_node("Knight/AnimatedSprite2D").play("Knight_Idle")
 	get_node("Archer/CharacterBody2D/AnimatedSprite2D").play("Archer_Idle")

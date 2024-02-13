@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://d113k4c5ylscn"]
 
-[ext_resource type="Texture2D" uid="uid://cyfb4mii2561k" path="res://Medieval_Castle_Asset_Pack/Tiles/damaged_brick_4.png" id="1_h5oy2"]
+[ext_resource type="Texture2D" uid="uid://cyfb4mii2561k" path="res://assets/Medieval_Castle_Asset_Pack/Tiles/damaged_brick_4.png" id="1_h5oy2"]
 [ext_resource type="Script" path="res://Worlds/PlayerSelect/PlayerSelect.gd" id="1_xhoha"]
 [ext_resource type="PackedScene" uid="uid://cu6wro0kdflny" path="res://Characters/Wizard.tscn" id="3_mc22b"]
 [ext_resource type="PackedScene" uid="uid://dt877sll6ufr" path="res://Characters/Knight.tscn" id="4_c1yvu"]
@@ -790,6 +790,46 @@ scale = Vector2(1.34375, 1)
 texture = ExtResource("1_h5oy2")
 metadata/_edit_group_ = true
 
+[node name="DamagedBrick126" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(776.62, 472)
+scale = Vector2(1.35125, 1)
+texture = ExtResource("1_h5oy2")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick132" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(772, 408)
+texture = ExtResource("1_h5oy2")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick133" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(772, 440)
+texture = ExtResource("1_h5oy2")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick134" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(776, 408)
+scale = Vector2(1.375, 1)
+texture = ExtResource("1_h5oy2")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick135" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(776.25, 374)
+scale = Vector2(1.35937, 1.125)
+texture = ExtResource("1_h5oy2")
+metadata/_edit_group_ = true
+
+[node name="DamagedBrick136" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(776.5, 440)
+scale = Vector2(1.34375, 1)
+texture = ExtResource("1_h5oy2")
+metadata/_edit_group_ = true
+
 [node name="DamagedBrick107" type="Sprite2D" parent="."]
 z_index = -2
 position = Vector2(541, 373)
@@ -876,14 +916,14 @@ metadata/_edit_lock_ = true
 offset_left = 925.0
 offset_top = 129.0
 offset_right = 1710.0
-offset_bottom = 294.0
+offset_bottom = 256.0
 rotation = 1.57136
 metadata/_edit_lock_ = true
 
 [node name="SkySkin_Placeholder" type="Panel" parent="."]
 offset_left = -9.0
 offset_top = 194.0
-offset_right = 776.0
+offset_right = 802.0
 offset_bottom = 359.0
 metadata/_edit_lock_ = true
 

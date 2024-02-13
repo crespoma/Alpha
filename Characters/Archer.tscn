@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://vhtvhfaqndmd"]
 
-[ext_resource type="Texture2D" uid="uid://2sqtp7easyyk" path="res://Base/Spritesheet/Ranger- Base.png" id="1_jowcw"]
+[ext_resource type="Texture2D" uid="uid://2sqtp7easyyk" path="res://assets/Base/Spritesheet/Ranger- Base.png" id="1_jowcw"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qitlv"]
 radius = 8.0

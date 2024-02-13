@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://bcgakk5ry20lt"]
 
-[ext_resource type="Texture2D" uid="uid://dalxdqsh5ycqt" path="res://Medieval_Castle_Asset_Pack/Background/layer_1.png" id="1_0v7lo"]
+[ext_resource type="Texture2D" uid="uid://dalxdqsh5ycqt" path="res://assets/Medieval_Castle_Asset_Pack/Background/layer_1.png" id="1_0v7lo"]
 [ext_resource type="Script" path="res://Play.gd" id="1_ssuaj"]
-[ext_resource type="Texture2D" uid="uid://dqnviya00e8nh" path="res://Medieval_Castle_Asset_Pack/Background/layer_2.png" id="2_64h44"]
+[ext_resource type="Texture2D" uid="uid://dqnviya00e8nh" path="res://assets/Medieval_Castle_Asset_Pack/Background/layer_2.png" id="2_64h44"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_14pcy"]
 

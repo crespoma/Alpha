@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://cu6wro0kdflny"]
 
-[ext_resource type="Texture2D" uid="uid://dy8foyjonn7s1" path="res://Wizard Pack/Idle.png" id="1_41ovs"]
+[ext_resource type="Texture2D" uid="uid://dy8foyjonn7s1" path="res://assets/Wizard Pack/Idle.png" id="1_41ovs"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_eqvuv"]
 radius = 1.9097
