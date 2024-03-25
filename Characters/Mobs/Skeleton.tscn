@@ -1,10 +1,128 @@
-[gd_scene load_steps=50 format=3 uid="uid://dqectiya0iri3"]
+[gd_scene load_steps=51 format=3 uid="uid://dqectiya0iri3"]
 
-[ext_resource type="Script" path="res://Characters/Mobs/Skeleton.gd" id="1_h2bte"]
 [ext_resource type="Texture2D" uid="uid://cw422vpptush0" path="res://assets/Skeleton/Sprite Sheets/Skeleton Idle.png" id="1_lyux7"]
 [ext_resource type="Texture2D" uid="uid://bf64rs40rct81" path="res://assets/Skeleton/Sprite Sheets/Skeleton React.png" id="1_o2tg4"]
 [ext_resource type="Texture2D" uid="uid://7quh1aug3rpb" path="res://assets/Skeleton/Sprite Sheets/Skeleton Dead.png" id="2_aivs6"]
 [ext_resource type="Texture2D" uid="uid://bbw87me0jbrmb" path="res://assets/Skeleton/Sprite Sheets/Skeleton Walk.png" id="2_nru86"]
+
+[sub_resource type="GDScript" id="GDScript_5f6wm"]
+script/source = "extends CharacterBody2D
+
+
+const SPEED = 50
+const JUMP_VELOCITY = -400.0
+var player = null;
+var ai_think_time = 4
+var ai_think_time_timer = null
+var can_move = false;
+var direction = null
+var lastdirection = null
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Get the gravity from the project settings to be synced with RigidBody nodes.
+var gravity = ProjectSettings.get_setting(\"physics/2d/default_gravity\")
+
+
+func _ready():
+	pass
+	
+	
+	
+
+
+
+func random():
+	randomize()
+	return randi()%20 - 10 # range is -10 to 10
+
+func ai_move(delta):
+		#print(currentKnight)
+		
+		var Knight = get_tree().get_current_scene().get_node(\"Knight\")
+		var Skeleton = get_tree().get_current_scene().get_node(\"Skeleton\")
+		var collision = Knight.get_node(\"CollisionShape2D\")
+		var collision2 = Skeleton.get_node(\"CollisionShape2D\")
+		await get_tree().create_timer(1.0).timeout
+		if(can_move):
+			print(\"moving\")
+			get_node(\"CollisionShape2D/AnimatedSprite2D\").play(\"Walk\")
+			var playerPos = Knight.global_position
+			var enemyPos = Skeleton.global_position
+			var collisionPos = collision.global_position
+			var collisionPos2 = collision2.global_position
+			
+			#look_at(playerPos)
+			
+			print(playerPos , \" Player Pos\")
+			print(enemyPos , \" Skeleton pos\")
+			velocity = position.direction_to(playerPos) * SPEED
+			velocity.y = 0;
+			
+			#look_at(playerPos)
+			
+			
+			#if(int(collisionPos2.x - 100) >= int(collisionPos.x)):
+				#can_move = false
+				#ai_idle()
+				#print(\"preaparing to attack!\")
+				#await get_tree().create_timer(5.0).timeout
+				#print(\"attack..\")
+				#return;
+			#else:
+		
+			
+			print(enemyPos.angle_to(playerPos))
+			print(enemyPos.angle())
+			print(self.rotation)
+			self.rotation = rad_to_deg(90)
+			
+			move_and_slide()
+				
+		else:
+			print(\"Cant Move!\")
+			can_move = false
+			get_node(\"CollisionShape2D/AnimatedSprite2D\").play(\"Idle\")
+			await get_tree().create_timer(1.0).timeout
+			can_move = true
+
+			
+
+
+func ai_idle():
+	get_node(\"CollisionShape2D/AnimatedSprite2D\").play(\"Idle\")
+	await get_tree().create_timer(5.0).timeout
+
+
+
+func _process(delta):
+	ai_move(delta)
+	#print(root)
+	
+	
+	#var Knight = root.get_node(\"Knight\")
+	#print(Knight)
+	#decide_to_attack()
+	#if(player != null):
+		#ai_move(player)
+	#else:
+		#print(\"Knight not in scene\")
+"
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xy4e1"]
 radius = 24.0
@@ -327,16 +445,27 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_406r1"]
+radius = 30.2244
+
 [node name="Skeleton" type="CharacterBody2D"]
-script = ExtResource("1_h2bte")
+script = SubResource("GDScript_5f6wm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(415, 288)
+position = Vector2(448, 286)
 shape = SubResource("CapsuleShape2D_xy4e1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CollisionShape2D"]
-position = Vector2(1, -2)
-scale = Vector2(1.125, 1.3125)
+position = Vector2(3, -5)
+scale = Vector2(1.86364, 1.35322)
 sprite_frames = SubResource("SpriteFrames_0dslb")
 animation = &"Walk"
 frame_progress = 0.630068
+
+[node name="Area2D" type="Area2D" parent="CollisionShape2D"]
+position = Vector2(-415, -288)
+
+[node name="Area" type="CollisionShape2D" parent="CollisionShape2D/Area2D"]
+position = Vector2(396, 283)
+scale = Vector2(5.61657, -1.40738)
+shape = SubResource("CircleShape2D_406r1")

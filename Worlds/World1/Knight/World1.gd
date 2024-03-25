@@ -18,6 +18,7 @@ func _physics_process(delta):
 
 func stop_moving():
 	pass
+
 	
 
 	

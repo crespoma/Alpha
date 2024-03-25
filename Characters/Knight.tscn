@@ -24,8 +24,8 @@
 [ext_resource type="Texture2D" uid="uid://do0uhyt80m6vn" path="res://assets/Medieval_Castle_Asset_Pack/HUD/bar.png" id="22_uekln"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v3m7b"]
-radius = 11.435
-height = 40.3893
+radius = 21.875
+height = 51.8519
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pemy8"]
 animations = [{
@@ -103,8 +103,8 @@ scale = Vector2(0.96, 1.08)
 shape = SubResource("CapsuleShape2D_v3m7b")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(528, 323)
-scale = Vector2(0.83999, 1)
+position = Vector2(525.94, 326)
+scale = Vector2(0.90437, 0.90625)
 sprite_frames = SubResource("SpriteFrames_pemy8")
 animation = &"Knight_walk"
 
