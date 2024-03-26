@@ -95,7 +95,7 @@ animations = [{
 }]
 
 [node name="Knight" type="CharacterBody2D"]
-position = Vector2(10, 7)
+position = Vector2(-528, -336)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(525, 334)

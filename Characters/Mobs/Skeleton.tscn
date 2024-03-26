@@ -9,8 +9,9 @@
 script/source = "extends CharacterBody2D
 
 
-const SPEED = 50
+const SPEED = 25
 const JUMP_VELOCITY = -400.0
+var insight = false;
 var player = null;
 var ai_think_time = 4
 var ai_think_time_timer = null
@@ -35,11 +36,16 @@ var lastdirection = null
 
 
 
+
+
+
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting(\"physics/2d/default_gravity\")
 
 
 func _ready():
+
+	var walls = get_tree().get_current_scene().get_node(\"StaticBody2D\")
 	pass
 	
 	
@@ -53,65 +59,67 @@ func random():
 
 func ai_move(delta):
 		#print(currentKnight)
-		
 		var Knight = get_tree().get_current_scene().get_node(\"Knight\")
 		var Skeleton = get_tree().get_current_scene().get_node(\"Skeleton\")
 		var collision = Knight.get_node(\"CollisionShape2D\")
 		var collision2 = Skeleton.get_node(\"CollisionShape2D\")
-		await get_tree().create_timer(1.0).timeout
-		if(can_move):
-			print(\"moving\")
+		var playerPos = Knight.global_position
+		var enemyPos = Skeleton.global_position
+		var collisionPos = collision.global_position
+		var collisionPos2 = collision2.global_position
+		if(can_move and insight):
 			get_node(\"CollisionShape2D/AnimatedSprite2D\").play(\"Walk\")
-			var playerPos = Knight.global_position
-			var enemyPos = Skeleton.global_position
-			var collisionPos = collision.global_position
-			var collisionPos2 = collision2.global_position
+			
+			
+			
+			
 			
 			#look_at(playerPos)
 			
-			print(playerPos , \" Player Pos\")
-			print(enemyPos , \" Skeleton pos\")
+			
 			velocity = position.direction_to(playerPos) * SPEED
 			velocity.y = 0;
 			
-			#look_at(playerPos)
+			#look_at(position.direction_to(playerPos))
+			#print(round(collisionPos))
+			collisionPos2.y = collisionPos.y
+			#print(round(collisionPos2))
+
 			
-			
-			#if(int(collisionPos2.x - 100) >= int(collisionPos.x)):
+			##if(collisionPos.x == collisionPos2.x - 38 or collisionPos2.x + 38):
 				#can_move = false
-				#ai_idle()
 				#print(\"preaparing to attack!\")
-				#await get_tree().create_timer(5.0).timeout
+				#ai_idle()
 				#print(\"attack..\")
-				#return;
 			#else:
+			move_and_slide()
 		
 			
-			print(enemyPos.angle_to(playerPos))
-			print(enemyPos.angle())
-			print(self.rotation)
-			self.rotation = rad_to_deg(90)
 			
-			move_and_slide()
+			
+			
+		
+			
 				
 		else:
-			print(\"Cant Move!\")
+			#print(\"Cant Move!\")
 			can_move = false
-			get_node(\"CollisionShape2D/AnimatedSprite2D\").play(\"Idle\")
-			await get_tree().create_timer(1.0).timeout
-			can_move = true
-
+			ai_idle()
 			
 
 
 func ai_idle():
 	get_node(\"CollisionShape2D/AnimatedSprite2D\").play(\"Idle\")
-	await get_tree().create_timer(5.0).timeout
+	await get_tree().create_timer(3.0).timeout
+	can_move = true;
+	
 
 
 
 func _process(delta):
-	ai_move(delta)
+
+	if(insight):
+		ai_move(delta)
 	#print(root)
 	
 	
@@ -122,11 +130,31 @@ func _process(delta):
 		#ai_move(player)
 	#else:
 		#print(\"Knight not in scene\")
+
+
+
+
+func _on_area_2d_body_entered(body):
+	if(body != self):
+			if(body.name == \"Knight\"):
+				print(body)
+				insight = true;
+				print(\"Knight seen\")
+	
+	
+
+
+func _on_area_2d_body_exited(body):
+	if(body.name == \"Knight\"):
+				print(body)
+				print(\"lost visual\")
+				ai_idle()
+				insight = false;
 "
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xy4e1"]
-radius = 24.0
-height = 58.0
+radius = 17.0
+height = 40.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cfjtr"]
 atlas = ExtResource("1_o2tg4")
@@ -446,26 +474,34 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_406r1"]
-radius = 30.2244
+radius = 65.8082
 
 [node name="Skeleton" type="CharacterBody2D"]
 script = SubResource("GDScript_5f6wm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(448, 286)
+position = Vector2(7.62939e-06, -8)
+scale = Vector2(1.71594, 1.60631)
 shape = SubResource("CapsuleShape2D_xy4e1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CollisionShape2D"]
-position = Vector2(3, -5)
-scale = Vector2(1.86364, 1.35322)
+position = Vector2(6, -5)
+scale = Vector2(1.75, 1.31297)
 sprite_frames = SubResource("SpriteFrames_0dslb")
 animation = &"Walk"
 frame_progress = 0.630068
 
 [node name="Area2D" type="Area2D" parent="CollisionShape2D"]
-position = Vector2(-415, -288)
+visible = false
+position = Vector2(-417, -290)
+metadata/_edit_lock_ = true
 
 [node name="Area" type="CollisionShape2D" parent="CollisionShape2D/Area2D"]
-position = Vector2(396, 283)
+visible = false
+position = Vector2(414, 289)
 scale = Vector2(5.61657, -1.40738)
 shape = SubResource("CircleShape2D_406r1")
+metadata/_edit_lock_ = true
+
+[connection signal="body_entered" from="CollisionShape2D/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="CollisionShape2D/Area2D" to="." method="_on_area_2d_body_exited"]
